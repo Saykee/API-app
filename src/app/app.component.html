@@ -7,7 +7,7 @@
   <div>
     <input type="text" name="movie-name" placeholder="Enter Movie Name" #movieName/>
   </div>
-  <button (click)="getMovieDetails(movieName.value)">Submit</button>
+  <button class="pure-button pure-button-primary" (click)="getMovieDetails(movieName.value)">Submit</button>
 </form>
 <div *ngIf="movieData">
   <h3 *ngIf="movieData">Movie : {{movieData.Title}}</h3>
