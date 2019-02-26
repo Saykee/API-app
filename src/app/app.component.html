@@ -1,15 +1,20 @@
-<h2>
-  <div>
+<div class="header">
+<h2 class="header">
   Do You Know Your Movies?
-</div>
 </h2>
-<form>
-  <div>
-    <input type="text" name="movie-name" placeholder="Enter Movie Name" #movieName/>
+</div>
+<div class="grid">
+<form class="gridItem">
+  <div class="input1">
+    <input class="inputBox" type="text" name="movie-name" placeholder="Enter Movie Name" #movieName/>
   </div>
   <button class="pure-button pure-button-primary" (click)="getMovieDetails(movieName.value)">Submit</button>
 </form>
+
+  <div class="gridItem">
 <div *ngIf="movieData">
   <h3 *ngIf="movieData">Movie : {{movieData.Title}}</h3>
   <img *ngIf="movieData" src={{movieData.Poster}}>
+</div>
+</div>
 </div>

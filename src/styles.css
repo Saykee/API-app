@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "https://unpkg.com/purecss@1.0.0/build/pure-min.css";
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+}
+
+.gridItem {
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.8);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.pure-button.pure-button-primary {
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.inputBox {
+    margin: 10px;
+    width: 80%;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header {
+    background-color: blue;
+    height: 100%;
+}
