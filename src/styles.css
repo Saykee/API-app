@@ -1,21 +1,69 @@
 @import "https://unpkg.com/purecss@1.0.0/build/pure-min.css";
 
-.grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    padding: 5px;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.gridItem {
+h1 {
+	color: black;
+	font-family: 'Cormorant Garamond';
+	border-bottom: 3px solid blue;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 72px;
+	letter-spacing: 5px;
+	margin-bottom: 57px;
+	text-align: center;
+	text-indent: 24px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: black;
+	font-family: 'Cormorant Garamond';
+	border-bottom: 3px solid blue;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 22px;
+	letter-spacing: 5px;
+	text-align: left;
+    text-transform: uppercase;
+    height: 45px;
+}
+h3 {
+    color: black;
+    font-family: 'Cormorant Garamond';
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 2px;
+	text-align: left;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.header {
+    margin: none;
+
+}
+
+.form {
     text-align: center;
-    border: 1px solid rgba(0,0,0,0.8);
+    border: 1px solid blue;
     border-radius: 20px;
     margin: 10px;
+    padding: 10px;
+}
+
+.poster {
+    text-align: center;
 }
 
 .pure-button.pure-button-primary {
-    margin: 10px;
     border-radius: 30px;
+    width: 80%;
+    margin: 10px;
 }
 
 .inputBox {
@@ -25,11 +73,38 @@
     padding: 5px;
 }
 
-h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+.movieDiv {
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
 }
 
-.header {
-    background-color: blue;
-    height: 100%;
+.movieGrid {
+    display: grid;
+    grid-template-columns: 45% 55%; 
+    padding: 20px;
 }
+
+.infoGrid {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.ratings {
+    color: black;
+    font-family: 'Cormorant Garamond';
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 22px;
+	letter-spacing: 2px;
+	text-align: left;
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
