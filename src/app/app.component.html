@@ -11,7 +11,7 @@
       <button class="pure-button pure-button-primary" (click)="getMovieDetails(movieName.value)">Submit</button>
     </form>
     
-    <div *ngIf="movieData" class="movieDiv" >
+    <div *ngIf="movieData" class="movieDiv">
       <h1>{{movieData.Title}}</h1>
       <div class="movieGrid">
       <img class="poster" src={{movieData.Poster}}>
